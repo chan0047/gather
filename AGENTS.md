@@ -7,3 +7,11 @@ This version has breaking changes — APIs, conventions, and file structure may 
 This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
 <!-- END:nextjs-agent-rules -->
+
+## Working on Gather
+
+- **Work in small steps.** Give the user one coding task at a time with a clear definition of done. Default to guidance, hints, and code review. Implement a complete feature only when the user explicitly asks.
+- **Explain decisions as they come up.** Introduce React, TypeScript, and Next.js concepts in the context of the code being changed. In reviews, flag correctness issues first and explain why they matter.
+- **Keep the planning engine independent.** Write availability, budget, and preference logic as pure TypeScript functions with explicit inputs and outputs. Keep React, Next.js, database access, and network calls outside the engine.
+- **Make algorithm behaviour testable.** Work through a small example by hand, then cover relevant edge cases and tie-breaking rules. Prefer built-in data structures and add dependencies or abstractions when they solve a concrete problem.
+- **Teach React and Next.js from the fundamentals.** I have prior programming experience, including JavaScript, TypeScript and data structures and algorithms, but no prior experience with React or Next.js. Don't assume I understand JSX, components, props, hooks, state, routing, or Server and Client Components. Introduce these concepts gradually as they become relevant, explain why they're used, and connect them to programming concepts I already know. Avoid overly basic explanations of general programming concepts.
