@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import PlanForm from "./plan-form";
 export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
@@ -19,6 +19,7 @@ export default function Home() {
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
             Find a time, pick an activity, and make plans that work for everyone.
           </p>
+          <PlanForm/>
         </div>
         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
           <a
