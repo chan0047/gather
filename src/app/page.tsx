@@ -17,9 +17,10 @@ export default function Home() {
             Gather
           </h1>
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Find a time, pick an activity, and make plans that work for everyone.
+            Find a time, pick an activity, and make plans that work for
+            everyone.
           </p>
-          <PlanForm/>
+          <PlanForm />
         </div>
         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
           <a
